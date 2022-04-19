@@ -38,7 +38,7 @@ module.exports.buffer2webpbuffer = (buffer,image_type,option,extra_path) => {
 };
 
 //now convert image to .webp format 
-module.exports.cwebp = (input_image,output_image,option,logging='> dev/null 2>&1') => {
+module.exports.cwebp = (input_image,output_image,option,logging='> /dev/null 2>&1') => {
 
 // input_image: input image(.jpeg, .pnp ....)
 //output_image: output image .webp 
@@ -61,7 +61,7 @@ return new Promise((resolve, reject) => {
 /******************************************************* dwebp *****************************************************/
 
 //now convert .webp to other image format 
-module.exports.dwebp = (input_image,output_image,option,logging='> dev/null 2>&1') => {
+module.exports.dwebp = (input_image,output_image,option,logging='> /dev/null 2>&1') => {
 
 // input_image: input image .webp
 //output_image: output image(.jpeg, .pnp ....)
@@ -86,7 +86,7 @@ return new Promise((resolve, reject) => {
 /******************************************************* gif2webp *****************************************************/
 
 //now convert .gif image to .webp format 
-module.exports.gwebp = (input_image,output_image,option,logging='> dev/null 2>&1') => {
+module.exports.gwebp = (input_image,output_image,option,logging='> /dev/null 2>&1') => {
 
 // input_image: input image(.jpeg, .pnp ....)
 //output_image: /output image .webp 
@@ -111,7 +111,7 @@ return new Promise((resolve, reject) => {
 
 //%%%%%%%%%%% Add ICC profile,XMP metadata and EXIF metadata
 
-module.exports.webpmux_add = (input_image,output_image,icc_profile,option,logging='> dev/null 2>&1') => {
+module.exports.webpmux_add = (input_image,output_image,icc_profile,option,logging='> /dev/null 2>&1') => {
 
 // input_image: input image(.webp)
 //output_image: output image .webp  
@@ -134,7 +134,7 @@ return new Promise((resolve, reject) => {
 
 //%%%%%%%%%%%%% Extract ICC profile,XMP metadata and EXIF metadata
 
-module.exports.webpmux_extract = (input_image,icc_profile,option,logging='> dev/null 2>&1') => {
+module.exports.webpmux_extract = (input_image,icc_profile,option,logging='> /dev/null 2>&1') => {
 
 // input_image: input image(.webp) 
 //icc_profile: icc profile
@@ -155,7 +155,7 @@ return new Promise((resolve, reject) => {
 
 //%%%%%%%% Strip ICC profile,XMP metadata and EXIF metadata 
 
-module.exports.webpmux_strip = (input_image,output_image,option,logging='> dev/null 2>&1') => {
+module.exports.webpmux_strip = (input_image,output_image,option,logging='> /dev/null 2>&1') => {
 
 // input_image: input image(.webp) 
 //output_image: output image .webp
@@ -176,7 +176,7 @@ return new Promise((resolve, reject) => {
 
 //%%%%%%%%%%% Create an animated WebP file from Webp images 
 
-module.exports.webpmux_animate = (input_images,output_image,loop,bgcolor,logging='> dev/null 2>&1') => {
+module.exports.webpmux_animate = (input_images,output_image,loop,bgcolor,logging='> /dev/null 2>&1') => {
 
 // input_images: array of image(.webp) 
 //output_image: animatedimage .webp
@@ -207,7 +207,7 @@ return new Promise((resolve, reject) => {
 
 //%%%%%%%%%%%% Get the a frame from an animated WebP file
 
-module.exports.webpmux_getframe = (input_image,output_image,frame_number,logging='> dev/null 2>&1') => {
+module.exports.webpmux_getframe = (input_image,output_image,frame_number,logging='> /dev/null 2>&1') => {
 
 // input_image: input image(.webp) 
 //output_image: output image .webp
